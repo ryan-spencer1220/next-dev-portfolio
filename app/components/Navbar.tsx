@@ -5,14 +5,14 @@ export default function Navbar() {
   return (
     <nav>
       <ul className="flex flex-row text-3xl justify-between">
-        <li>Ryan Spencer</li>
-        <div className="flex flex-row">
-          <li>About</li>
-          <li>Blog</li>
-          <li>
+        <li>RYAN SPENCER</li>
+        <div className="flex flex-row justify-evenly">
+          <li className="px-8">About</li>
+          <li className="px-8">Blog</li>
+          <li className="px-8">
             <FaGithub />
           </li>
-          <li>
+          <li className="px-8">
             <FaLinkedin />
           </li>
         </div>
