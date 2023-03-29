@@ -13,9 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="container mx-auto px-40 py-14">
-      <Navbar />
-
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
