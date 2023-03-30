@@ -6,16 +6,17 @@ import Project from "../public/example.png";
 import OutlinedButton from "./components/OutlinedButton";
 import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <section className="flex pt-40 pb-20">
+      <section className="flex pt-40 pb-28">
         <div className="pr-40">
           <h1 className="text-5xl">
             Hello! I'm{" "}
-            <RoughNotation type="highlight" show={true} color="yellow">
+            <RoughNotation type="highlight" show={true} color="#0236E8">
               Ryan Spencer
             </RoughNotation>
             , a developer based in Portland, Oregon.
@@ -38,8 +39,14 @@ export default function Home() {
               voluptate dicta aliquid, quos voluptates optio!
             </p>
             <div className="grid grid-cols-2 gap-4 py-10">
-              <SolidButton buttonText="View LinkedIn" />
-              <OutlinedButton buttonText="View Github" />
+              <SolidButton
+                buttonText="View LinkedIn"
+                link="https://www.linkedin.com/in/ryan-spencer-pdx/"
+              />
+              <OutlinedButton
+                buttonText="View Github"
+                link="https://github.com/ryan-spencer1220"
+              />
             </div>
           </div>
         </div>
@@ -49,7 +56,7 @@ export default function Home() {
           className="w-1/3 h-1/3 rounded-3xl shadow-lg shadow-gray-400"
         />
       </section>
-      <section className="pb-20">
+      <section className="pb-28">
         <div>
           <h2 className="text-4xl">Projects</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">
@@ -91,7 +98,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="pb-28">
         <div>
           <h2 className="text-4xl">Posts</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">
@@ -148,6 +155,27 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="pb-20">
+        <h2 className="text-4xl">Get In Touch</h2>
+        <p className="text-xl text-slate-700 pt-4 pb-20">
+          Do you have a job opportunity or idea you would like to discuss? Feel
+          free to reach me at hello@ryanspencer.dev. You can also find me on{" "}
+          <Link
+            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+            href="https://github.com/ryan-spencer1220"
+          >
+            Github
+          </Link>{" "}
+          and{" "}
+          <Link
+            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+            href="https://www.linkedin.com/in/ryan-spencer-pdx/"
+          >
+            LinkedIn
+          </Link>
+          .
+        </p>
       </section>
     </>
   );
