@@ -14,41 +14,64 @@ export default function Home() {
     <>
       <section className="flex pt-40 pb-28">
         <div className="pr-40">
-          <h1 className="text-5xl py-4">
-            Hello! I'm{" "}
-            <RoughNotation type="highlight" show={true} color="#0236E8">
-              Ryan Spencer
-            </RoughNotation>
-            , a developer based in Portland, Oregon.
-          </h1>
-          <div className="text-slate-600">
-            <p className="py-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique, pariatur, corrupti molestias suscipit provident rerum
-              ad magnam excepturi natus incidunt quos aspernatur consequatur.
-              Vero tempora in temporibus. Repellendus, cupiditate facere.
-            </p>
-            <p className="py-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique, pariatur, corrupti molestias suscipit provident rerum
-              ad magnam excepturi natus incidunt quos aspernatur consequatur.
-              Vero tempora in temporibus. Repellendus, cupiditate facere.
-            </p>
-            <p className="py-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-              voluptate dicta aliquid, quos voluptates optio!
-            </p>
-            <div className="grid grid-cols-2 gap-4 py-10">
-              <SolidButton
-                buttonText="View LinkedIn"
-                link="https://www.linkedin.com/in/ryan-spencer-pdx/"
-              />
-              <OutlinedButton
-                buttonText="View Github"
-                link="https://github.com/ryan-spencer1220"
-              />
+          <RoughNotationGroup show={true}>
+            <h1 className="text-5xl py-4">
+              Hello! I'm{" "}
+              <RoughNotation
+                type="highlight"
+                show={true}
+                color="#d1f6f4"
+                order={1}
+              >
+                Ryan Spencer
+              </RoughNotation>
+              , a developer based in Portland, Oregon.
+            </h1>
+            <div className="text-slate-600">
+              <p className="py-4 text-lg leading-relaxed">
+                Recent Epicodus graduate specializing in{" "}
+                <RoughNotation type="highlight" order={2} color="pink">
+                  JavaScript/ React and C#.
+                </RoughNotation>{" "}
+                Searching for an opportunity to combine my background in{" "}
+                <RoughNotation type="highlight" order={3} color="#fff2c8">
+                  business management
+                </RoughNotation>{" "}
+                with my experience in{" "}
+                <RoughNotation type="highlight" color="#eadbf6" order={4}>
+                  software development.
+                </RoughNotation>
+              </p>
+              <p className="py-4 text-lg leading-relaxed">
+                Prior to Epicodus I was an active member of the the craft beer
+                industry as the general manager of Bailey's Taproom in Portland,
+                Oregon. I am a{" "}
+                <RoughNotation type="highlight" color="#c5f2cd" order={5}>
+                  communicative,
+                </RoughNotation>
+                <RoughNotation type="highlight" color="#d1f6f4" order={6}>
+                  detail oriented,
+                </RoughNotation>{" "}
+                team player who presents technical information effectively with
+                a passion for education and personal growth.
+              </p>
+              <p className="py-4 text-lg leading-relaxed">
+                <RoughNotation type="underline" order={7}>
+                  Take a look at my work or get in touch!
+                </RoughNotation>
+              </p>
+              <div className="grid grid-cols-2 gap-4 py-10">
+                <SolidButton
+                  buttonText="View LinkedIn"
+                  link="https://www.linkedin.com/in/ryan-spencer-pdx/"
+                />
+                <OutlinedButton
+                  buttonText="View Github"
+                  link="https://github.com/ryan-spencer1220"
+                />
+              </div>
             </div>
-          </div>
+          </RoughNotationGroup>
         </div>
         <Image
           src={Headshot}

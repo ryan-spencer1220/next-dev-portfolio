@@ -11,9 +11,18 @@ export default function Navbar() {
   return (
     <nav>
       <ul className="flex flex-row text-2xl justify-between content-center">
-        <Link href="/">
-          <li>RYAN SPENCER</li>
-        </Link>
+        {currentPath === "/" && (
+          <Link href="/">
+            <li>RYAN SPENCER</li>
+          </Link>
+        )}
+        {currentPath !== "/" && (
+          <RoughNotation type="box" show={true} color="black">
+            <Link href="/">
+              <li>RYAN SPENCER</li>
+            </Link>
+          </RoughNotation>
+        )}
         <div className="flex flex-row justify-evenl content-center">
           <Link href="/about">
             <li className="px-6">About</li>
