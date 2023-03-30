@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <section className="flex pt-40 pb-28">
         <div className="pr-40">
-          <h1 className="text-5xl">
+          <h1 className="text-5xl py-4">
             Hello! I'm{" "}
             <RoughNotation type="highlight" show={true} color="#0236E8">
               Ryan Spencer
@@ -113,7 +113,7 @@ export default function Home() {
               className="rounded-3xl shadow-md shadow-gray-400"
             />
             <div className="py-10">
-              <h5 className="text-2xl font-bold">Project Name #1</h5>
+              <h5 className="text-2xl font-bold">Blog Post #1</h5>
               <p className="text-slate-600 py-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
                 illo laboriosam cum iste dicta quia culpa sed exercitationem
@@ -160,16 +160,23 @@ export default function Home() {
         <h2 className="text-4xl">Get In Touch</h2>
         <p className="text-xl text-slate-700 pt-4 pb-20">
           Do you have a job opportunity or idea you would like to discuss? Feel
-          free to reach me at hello@ryanspencer.dev. You can also find me on{" "}
+          free to reach me at{" "}
           <Link
-            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"
+            href="https://github.com/ryan-spencer1220"
+          >
+            hello@ryanspencer.dev
+          </Link>
+          . You can also find me on{" "}
+          <Link
+            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"
             href="https://github.com/ryan-spencer1220"
           >
             Github
           </Link>{" "}
           and{" "}
           <Link
-            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+            className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"
             href="https://www.linkedin.com/in/ryan-spencer-pdx/"
           >
             LinkedIn
