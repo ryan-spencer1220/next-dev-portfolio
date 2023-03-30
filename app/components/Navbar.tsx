@@ -10,11 +10,11 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className="flex flex-row text-2xl justify-between">
+      <ul className="flex flex-row text-2xl justify-between content-center">
         <Link href="/">
           <li>RYAN SPENCER</li>
         </Link>
-        <div className="flex flex-row justify-evenly">
+        <div className="flex flex-row justify-evenl content-center">
           <Link href="/about">
             <li className="px-6">About</li>
           </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
             </>
           )}
           {currentPath !== "/" && (
-            <>
+            <div className="grid grid-cols-2 content-center">
               <li className="px-6">
                 <Link href="https://github.com/ryan-spencer1220">
                   <FaGithub />
@@ -45,7 +45,7 @@ export default function Navbar() {
                   <FaLinkedin />
                 </Link>
               </li>
-            </>
+            </div>
           )}
         </div>
       </ul>

@@ -58,7 +58,7 @@ export default function About() {
                 illo laboriosam cum iste dicta quia culpa sed exercitationem
                 quas!
               </p>
-              <p className="text-slate-600 font-bold">View Project</p>
+              <p className="text-slate-600 font-bold">Read More</p>
             </div>
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function About() {
                 illo laboriosam cum iste dicta quia culpa sed exercitationem
                 quas!
               </p>
-              <p className="text-slate-600 font-bold">View Project</p>
+              <p className="text-slate-600 font-bold">Read More</p>
             </div>
           </div>
         </div>
