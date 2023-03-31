@@ -11,7 +11,7 @@ export default function About() {
     <>
       <section className="flex pt-40 pb-28">
         <div className="pr-40">
-          <h1 className="text-5xl py-4">Hi there, I'm Ryan.</h1>
+          <h1 className="text-5xl py-4">Hi there, I&apos;m Ryan.</h1>
           <div className="text-slate-600">
             <p className="py-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -41,7 +41,7 @@ export default function About() {
         <div>
           <h2 className="text-4xl">Recent Posts</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">
-            Thoughts on what I'm building and learning.
+            Thoughts on what I&apos;m building and learning.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-40">

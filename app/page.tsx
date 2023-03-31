@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Headshot from "../public/headshot.jpg";
 import Project from "../public/example.png";
+import Blog1 from "../public/blog-thumbnails/blog-post-1.webp";
+import Blog2 from "../public/blog-thumbnails/blog-post-2.webp";
+import Blog3 from "../public/blog-thumbnails/blog-post-3.webp";
 import OutlinedButton from "./components/OutlinedButton";
 import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
@@ -16,7 +19,7 @@ export default function Home() {
         <div className="pr-40">
           <RoughNotationGroup show={true}>
             <h1 className="text-5xl py-4">
-              Hello! I'm{" "}
+              Hello! I&apos;m{" "}
               <RoughNotation
                 type="highlight"
                 show={true}
@@ -44,8 +47,8 @@ export default function Home() {
               </p>
               <p className="py-4 text-lg leading-relaxed">
                 Prior to Epicodus I was an active member of the the craft beer
-                industry as the general manager of Bailey's Taproom in Portland,
-                Oregon. I am a{" "}
+                industry as the general manager of Bailey&apos;s Taproom in
+                Portland, Oregon. I am a{" "}
                 <RoughNotation type="highlight" color="#c5f2cd" order={5}>
                   communicative,
                 </RoughNotation>
@@ -83,7 +86,7 @@ export default function Home() {
         <div>
           <h2 className="text-4xl">Projects</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">
-            Some of the side projects I've been working on:
+            Some of the side projects I&apos;ve been working on:
           </p>
         </div>
         <div className="grid grid-cols-2 gap-20">
@@ -125,13 +128,13 @@ export default function Home() {
         <div>
           <h2 className="text-4xl">Posts</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">
-            Thoughts on what I'm building and learning.
+            Thoughts on what I&apos;m building and learning.
           </p>
         </div>
         <div className="grid grid-cols-3 gap-10">
           <div>
             <Image
-              src={Project}
+              src={Blog1}
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
             />
@@ -147,7 +150,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={Project}
+              src={Blog2}
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
             />
@@ -163,7 +166,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={Project}
+              src={Blog3}
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
             />
@@ -180,7 +183,11 @@ export default function Home() {
         </div>
       </section>
       <section className="pb-20">
-        <h2 className="text-4xl">Get In Touch</h2>
+        <h2 className="text-4xl">
+          <RoughNotation type="box" show={true} color="black">
+            Get In Touch
+          </RoughNotation>
+        </h2>
         <p className="text-xl text-slate-700 pt-4 pb-20">
           Do you have a job opportunity or idea you would like to discuss? Feel
           free to reach me at{" "}

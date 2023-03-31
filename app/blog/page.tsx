@@ -4,11 +4,13 @@ import Thumbnail1 from "../../public/blog-thumbnails/blog-post-1.webp";
 import Thumbnail2 from "../../public/blog-thumbnails/blog-post-2.webp";
 import Thumbnail3 from "../../public/blog-thumbnails/blog-post-3.webp";
 import { BsCalendarFill, BsFolderFill, BsPersonFill } from "react-icons/bs";
+import Posts from "../components/Posts";
 
 export default function Blog() {
   return (
     <div className="container mx-auto grid col-span-1 px-40 pt-10">
       <section className="py-10">
+        <Posts />
         <h3 className="text-4xl py-10">Javascript Scope & Closure</h3>
         <Image src={Thumbnail1} alt="Laptop" className="w-5/6 rounded-lg" />
         <p className="text-lg py-10 pr-16">
