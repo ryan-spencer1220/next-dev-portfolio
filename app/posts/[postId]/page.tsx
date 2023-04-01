@@ -36,7 +36,11 @@ export default async function Post({ params }: { params: { postId: string } }) {
     return notFound();
   }
 
-  const { title, date, contentHtml } = await getPostData(postId);
+  const { title, date, thumbnail, category, contentHtml } = await getPostData(
+    postId
+  );
+
+  console.log("CONSOLE LOG: ", thumbnail, category);
 
   const pubDate = getFormattedDate(date);
 

@@ -134,9 +134,11 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-10">
           <div>
             <Image
-              src={Blog1}
+              src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
+              width={100}
+              height={100}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #1</h5>
@@ -150,9 +152,11 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={Blog2}
+              src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
+              width={100}
+              height={100}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #2</h5>
@@ -166,9 +170,11 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={Blog3}
+              src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
+              width={100}
+              height={100}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #3</h5>

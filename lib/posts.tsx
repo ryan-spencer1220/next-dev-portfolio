@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-const postsDirectory = path.join(process.cwd(), "blogposts");
+const postsDirectory = path.join(process.cwd(), "blog-posts");
 
 export function getSortedPostsData() {
   // Get file names under /posts
@@ -24,7 +24,11 @@ export function getSortedPostsData() {
       id,
       title: matterResult.data.title,
       date: matterResult.data.date,
+      thumbnail: matterResult.data.thumbnail,
+      category: matterResult.data.cateogry,
     };
+
+    console.log(blogPost);
 
     // Combine the data with the id
     return blogPost;
@@ -50,6 +54,8 @@ export async function getPostData(id: string) {
     id,
     title: matterResult.data.title,
     date: matterResult.data.date,
+    thumbnail: matterResult.data.thumbnail,
+    category: matterResult.data.cateogry,
     contentHtml,
   };
 
