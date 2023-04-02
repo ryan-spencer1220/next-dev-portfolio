@@ -11,6 +11,8 @@ export default function ListItem({ post }: Props) {
   const { id, title, date, thumbnail, category } = post;
   const formattedDate = getFormattedDate(date);
 
+  console.log(post);
+
   return (
     <li className="py-10">
       <Link className="text-4xl py-10" href={`/posts/${id}`}>

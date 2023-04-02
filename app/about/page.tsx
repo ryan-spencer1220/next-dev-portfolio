@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Headshot from "../../public/headshot.jpg";
 import Project from "../../public/example.png";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
@@ -13,21 +11,30 @@ export default function About() {
         <div className="pr-40">
           <h1 className="text-5xl py-4">Hi there, I&apos;m Ryan.</h1>
           <div className="text-slate-600">
-            <p className="py-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique, pariatur, corrupti molestias suscipit provident rerum
-              ad magnam excepturi natus incidunt quos aspernatur consequatur.
-              Vero tempora in temporibus. Repellendus, cupiditate facere.
+            <p className="py-4 text-lg leading-relaxed">
+              Prior to software I was an active member of the craft beer
+              industry. While my career goals have shifted, that experience
+              helped me understand how much I value community and continual
+              education. Ultimately these realizations led me to a career in
+              software development. Working in craft beer, and specifically
+              managing a bar, proved to be a great opportunity to develop my
+              communication skills, ability to stay organized, and further hone
+              my problem-solving abilities.
             </p>
-            <p className="py-4">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Similique, pariatur, corrupti molestias suscipit provident rerum
-              ad magnam excepturi natus incidunt quos aspernatur consequatur.
-              Vero tempora in temporibus. Repellendus, cupiditate facere.
+            <p className="py-4 text-lg leading-relaxed">
+              My formal software development training took place at a coding
+              bootcamp called Epicodus, in Portland, Oregon. Our time was spent
+              pair programming for eight-hour days over a six month period.
+              During The first third of our program, we built a solid
+              understanding of Javascript, HTML and CSS. Next, we utilized
+              strongly-typed languages by spending six weeks with C# & ASP.NET
+              Core. Finally, we built upon the fundamentals we learned in
+              JavaScript by taking a deep dive into React and Firebase.
             </p>
-            <p className="py-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
-              voluptate dicta aliquid, quos voluptates optio!
+            <p className="py-4 text-lg leading-relaxed">
+              Currently I am working as a Project Manager at a small digital
+              marketing company called Delmain. If you have a job opportunity or
+              idea you would like to discuss, feel free to reach out!
             </p>
           </div>
         </div>

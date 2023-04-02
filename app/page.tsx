@@ -1,16 +1,11 @@
 "use client";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Headshot from "../public/headshot.jpg";
 import Project from "../public/example.png";
-import Blog1 from "../public/blog-thumbnails/blog-post-1.webp";
-import Blog2 from "../public/blog-thumbnails/blog-post-2.webp";
-import Blog3 from "../public/blog-thumbnails/blog-post-3.webp";
 import OutlinedButton from "./components/OutlinedButton";
 import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Link from "next/link";
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -47,16 +42,19 @@ export default function Home() {
               </p>
               <p className="py-4 text-lg leading-relaxed">
                 Prior to Epicodus I was an active member of the the craft beer
-                industry as the general manager of Bailey&apos;s Taproom in
-                Portland, Oregon. I am a{" "}
+                industry as the general manager of a high-volume craft beer bar
+                in Portland, Oregon. I am a{" "}
                 <RoughNotation type="highlight" color="#c5f2cd" order={5}>
                   communicative,
-                </RoughNotation>
+                </RoughNotation>{" "}
                 <RoughNotation type="highlight" color="#d1f6f4" order={6}>
                   detail oriented,
                 </RoughNotation>{" "}
-                team player who presents technical information effectively with
-                a passion for education and personal growth.
+                <RoughNotation type="highlight" color="#fff2c8" order={6}>
+                  team player
+                </RoughNotation>{" "}
+                who presents technical information effectively with a passion
+                for education and personal growth.
               </p>
               <p className="py-4 text-lg leading-relaxed">
                 <RoughNotation type="underline" order={7}>
@@ -137,8 +135,8 @@ export default function Home() {
               src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #1</h5>
@@ -155,8 +153,8 @@ export default function Home() {
               src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #2</h5>
@@ -173,8 +171,8 @@ export default function Home() {
               src="/api-img1.webp"
               alt="Sample Project Mockup"
               className="rounded-3xl shadow-md shadow-gray-400"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
             />
             <div className="py-10">
               <h5 className="text-2xl font-bold">Blog Post #3</h5>
