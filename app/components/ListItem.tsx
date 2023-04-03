@@ -8,10 +8,8 @@ type Props = {
 };
 
 export default function ListItem({ post }: Props) {
-  const { id, title, date, thumbnail, category } = post;
+  const { id, title, date, thumbnail, categories, snippet } = post;
   const formattedDate = getFormattedDate(date);
-
-  console.log(post);
 
   return (
     <li className="py-10">
@@ -21,17 +19,11 @@ export default function ListItem({ post }: Props) {
       <Image
         src={thumbnail}
         alt="Laptop"
-        className="w-5/6 rounded-lg"
+        className="w-5/6 rounded-lg pt-4"
         width={500}
         height={500}
       />
-      <p className="text-lg py-10 pr-16">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iste id
-        sapiente totam ab, autem aliquid maxime perspiciatis quo est, eligendi
-        recusandae laudantium? Minus sunt ut illo eligendi? Tempore sunt fugiat
-        sapiente. Esse asperiores nostrum dolore excepturi. Distinctio nesciunt
-        assumenda a quos obcaecati vel placeat?
-      </p>
+      <p className="text-lg py-10 pr-16">{snippet}</p>
       <div className="flex gap-x-12">
         <div className="flex items-center text-lg">
           <BsPersonFill />
@@ -43,7 +35,7 @@ export default function ListItem({ post }: Props) {
         </div>
         <div className="flex items-center text-lg">
           <BsFolderFill />
-          <p className="px-2">{category}</p>
+          <p className="px-2">{categories}</p>
         </div>
       </div>
     </li>

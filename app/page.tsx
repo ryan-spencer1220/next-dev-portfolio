@@ -6,6 +6,7 @@ import OutlinedButton from "./components/OutlinedButton";
 import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Link from "next/link";
+import BlogPostPreview from "./components/BlogPostPreview";
 
 export default function Home() {
   return (
@@ -130,60 +131,27 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-3 gap-10">
-          <div>
-            <Image
-              src="/api-img1.webp"
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400"
-              width={500}
-              height={500}
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Blog Post #1</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas...
-              </p>
-              <p className="text-slate-600 font-bold">Read More</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/api-img1.webp"
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400"
-              width={500}
-              height={500}
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Blog Post #2</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas..
-              </p>
-              <p className="text-slate-600 font-bold">Read More</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/api-img1.webp"
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400"
-              width={500}
-              height={500}
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Blog Post #3</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas..
-              </p>
-              <p className="text-slate-600 font-bold">Read More</p>
-            </div>
-          </div>
+          <BlogPostPreview
+            image="/api-img1.webp"
+            alt="Sample Project Mockup"
+            title="REST & RESTful APIs"
+            summary="Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers..."
+            link="/posts/restful-apis"
+          />
+          <BlogPostPreview
+            image="/api-img1.webp"
+            alt="Sample Project Mockup"
+            title="REST & RESTful APIs"
+            summary="Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers..."
+            link="/posts/restful-apis"
+          />
+          <BlogPostPreview
+            image="/api-img1.webp"
+            alt="Whiteboard"
+            title="REST & RESTful APIs"
+            summary="Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers..."
+            link="/posts/restful-apis"
+          />
         </div>
       </section>
       <section className="pb-20">

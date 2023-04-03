@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Headshot from "../../public/headshot.jpg";
-import Project from "../../public/example.png";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function About() {
@@ -51,40 +50,7 @@ export default function About() {
             Thoughts on what I&apos;m building and learning.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-40">
-          <div>
-            <Image
-              src={Project}
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400 w-5/6"
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Blog Post #1</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas!
-              </p>
-              <p className="text-slate-600 font-bold">Read More</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src={Project}
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400 w-5/6"
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Blog Post #2</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas!
-              </p>
-              <p className="text-slate-600 font-bold">Read More</p>
-            </div>
-          </div>
-        </div>
+        <div className="grid grid-cols-2 gap-40"></div>
       </section>
     </>
   );

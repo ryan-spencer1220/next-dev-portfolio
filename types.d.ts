@@ -3,5 +3,6 @@ type BlogPost = {
   title: string;
   date: string;
   thumbnail: string;
-  category: string;
+  snippet: string;
+  categories: string;
 };

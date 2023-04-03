@@ -25,10 +25,9 @@ export function getSortedPostsData() {
       title: matterResult.data.title,
       date: matterResult.data.date,
       thumbnail: matterResult.data.thumbnail,
-      category: matterResult.data.cateogry,
+      categories: matterResult.data.categories,
+      snippet: matterResult.data.snippet,
     };
-
-    console.log(blogPost);
 
     // Combine the data with the id
     return blogPost;
@@ -55,9 +54,12 @@ export async function getPostData(id: string) {
     title: matterResult.data.title,
     date: matterResult.data.date,
     thumbnail: matterResult.data.thumbnail,
-    category: matterResult.data.cateogry,
+    categories: matterResult.data.categories,
+    snippet: matterResult.data.snippet,
     contentHtml,
   };
+
+  console.log(blogPostWithHTML);
 
   // Combine the data with the id
   return blogPostWithHTML;

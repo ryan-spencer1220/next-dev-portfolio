@@ -2,7 +2,8 @@
 title: "Javascript Scope & Closure"
 date: "2020-01-02"
 thumbnail: "/scope-img1.webp"
-category: "JavaScript"
+snippet: "Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions in our application. Scope also refers to..."
+categories: "JavaScript"
 ---
 
 ![Telescope](/scope-img1.webp)

@@ -2,7 +2,8 @@
 title: "Class & Functional Components"
 date: "2020-01-01"
 thumbnail: "/components-1.webp"
-category: "React"
+snippet: "Since the launch of React in 2013, the framework has evolved and changed overtime. Many of the concepts introduced in the early days of React have fallen out of favor for cleaner, easier to read..."
+categories: "React"
 ---
 
 #React Class Components vs Function Components

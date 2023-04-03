@@ -2,7 +2,8 @@
 title: "REST & RESTful APIs"
 date: "2020-01-02"
 thumbnail: "/api-img1.webp"
-category: "API"
+snippet: "Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers, but what exactly are these terms referring to? This article will..."
+categories: "API"
 ---
 
 #REST & RESTful APIs
