@@ -132,18 +132,18 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-3 gap-10">
           <BlogPostPreview
-            image="/api-img1.webp"
-            alt="Sample Project Mockup"
-            title="REST & RESTful APIs"
-            summary="Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers..."
-            link="/posts/restful-apis"
+            image="/components-1.webp"
+            alt="Laptop"
+            title="Class & Functional Components"
+            summary="Since the launch of React in 2013, the framework has evolved and changed overtime. Many of the concepts introduced.."
+            link="/posts/class-and-functional-components"
           />
           <BlogPostPreview
-            image="/api-img1.webp"
+            image="/scope-img1.webp"
             alt="Sample Project Mockup"
-            title="REST & RESTful APIs"
-            summary="Familiarity with REST & RESTful APIs is an increasingly common request from employers looking to hire developers..."
-            link="/posts/restful-apis"
+            title="JavaScript Scope & Closure"
+            summary="Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions..."
+            link="/posts/scope-closure"
           />
           <BlogPostPreview
             image="/api-img1.webp"
