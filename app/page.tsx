@@ -29,7 +29,7 @@ export default function Home() {
             <div className="text-slate-600">
               <p className="py-4 text-lg leading-relaxed">
                 Recent Epicodus graduate specializing in{" "}
-                <RoughNotation type="highlight" order={2} color="pink">
+                <RoughNotation type="highlight" order={2} color="#f9caca">
                   JavaScript/ React and C#.
                 </RoughNotation>{" "}
                 Searching for an opportunity to combine my background in{" "}
