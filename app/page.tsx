@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
 import Headshot from "../public/headshot.jpg";
-import Project from "../public/example.png";
-import OutlinedButton from "./components/OutlinedButton";
-import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Link from "next/link";
+import OutlinedButton from "./components/OutlinedButton";
+import SolidButton from "./components/SolidButton";
 import BlogPostPreview from "./components/BlogPostPreview";
 import ProjectPreview from "./components/ProjectPreview";
 
@@ -56,13 +55,17 @@ export default function Home() {
                   communicative,
                 </RoughNotation>{" "}
                 <RoughNotation type="highlight" color="#d1f6f4" order={6}>
-                  detail-oriented,
+                  organized,
                 </RoughNotation>{" "}
-                <RoughNotation type="highlight" color="#fff2c8" order={6}>
-                  team-player
+                team-player who presents technical information effectively with
+                a{" "}
+                <RoughNotation type="highlight" color="#fff2c8" order={7}>
+                  passion
                 </RoughNotation>{" "}
-                who presents technical information effectively with a passion
-                for education and personal growth.
+                for education and personal{" "}
+                <RoughNotation type="highlight" color="#eadbf6" order={7}>
+                  growth.
+                </RoughNotation>
               </p>
               <p className="py-4 text-lg leading-relaxed">
                 <RoughNotation type="underline" order={7}>
@@ -104,9 +107,9 @@ export default function Home() {
           />
           <ProjectPreview
             image="/example.png"
-            alt="tip out project thumbnail"
-            title="Tip Out Mobile Application"
-            summary="Mobile application designed to help service industry workers track their tips. This application was built with React Native and Supabase"
+            alt="book smart project thumbnail"
+            title="Booksmart Web Application"
+            summary="Web application designed to give users the opportunity to speak with their favorite authros through the ChatGPT API. This porject was created with Next.js, React, and Tailwind CSS."
           />
         </div>
       </section>
@@ -126,7 +129,7 @@ export default function Home() {
             link="/posts/class-and-functional-components"
           />
           <BlogPostPreview
-            image="/scope-img1.webp"
+            image="/scope.jpg"
             alt="Sample Project Mockup"
             title="JavaScript Scope & Closure"
             summary="Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions..."
@@ -150,12 +153,12 @@ export default function Home() {
         <p className="text-xl text-slate-700 pt-4 pb-20">
           Do you have a job opportunity or idea you would like to discuss? Feel
           free to reach me at{" "}
-          <Link
+          <a
             className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"
-            href="https://github.com/ryan-spencer1220"
+            href="mailto: hello@ryanspencer.dev"
           >
             hello@ryanspencer.dev
-          </Link>
+          </a>
           . You can also find me on{" "}
           <Link
             className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"

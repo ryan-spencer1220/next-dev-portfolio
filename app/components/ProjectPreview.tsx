@@ -20,7 +20,7 @@ export default function ProjectPreview(props: {
       <div className="py-10">
         <h5 className="text-2xl font-bold">{props.title}</h5>
         <p className="text-slate-600 py-6">{props.summary}</p>
-        <SolidButton buttonText="View Project" link={`/${props.title}`} />
+        <SolidButton buttonText="Learn More" link={`/${props.title}`} />
       </div>
     </div>
   );

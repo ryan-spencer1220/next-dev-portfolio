@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className="flex flex-row text-2xl justify-between content-center">
+      <ul className="flex flex-row text-2xl justify-between content-center bg-white py-8 w-full">
         {currentPath === "/" && (
           <Link href="/">
             <li>RYAN SPENCER</li>

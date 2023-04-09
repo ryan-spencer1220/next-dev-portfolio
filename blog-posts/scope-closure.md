@@ -1,12 +1,12 @@
 ---
 title: "Javascript Scope & Closure"
 date: "2020-01-02"
-thumbnail: "/scope-img1.webp"
+thumbnail: "/scope.jpg"
 snippet: "Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions in our application. Scope also refers to..."
 categories: "JavaScript"
 ---
 
-![Telescope](/scope-img1.webp)
+![Telescope](/scope.jpg)
 
 ###Scope
 Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions in our application. Scope also refers to the rules that determine where and when our program, variables, and functions are accessible.
