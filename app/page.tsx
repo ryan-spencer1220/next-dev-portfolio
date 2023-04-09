@@ -7,11 +7,12 @@ import SolidButton from "./components/SolidButton";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import Link from "next/link";
 import BlogPostPreview from "./components/BlogPostPreview";
+import ProjectPreview from "./components/ProjectPreview";
 
 export default function Home() {
   return (
     <>
-      <section className="flex pt-40 pb-28">
+      <section className="flex pt-40 pb-28 break-normal">
         <div className="pr-40">
           <RoughNotationGroup show={true}>
             <h1 className="text-5xl py-4">
@@ -22,37 +23,43 @@ export default function Home() {
                 color="#d1f6f4"
                 order={1}
               >
-                Ryan Spencer
-              </RoughNotation>
-              , a developer based in Portland, Oregon.
+                Ryan,
+              </RoughNotation>{" "}
+              a developer based in Portland, Oregon.
             </h1>
             <div className="text-slate-600">
               <p className="py-4 text-lg leading-relaxed">
-                Recent Epicodus graduate specializing in{" "}
+                I am a recent Epicodus graduate specializing in{" "}
                 <RoughNotation type="highlight" order={2} color="#f9caca">
-                  JavaScript/ React and C#.
+                  JavaScript/React
                 </RoughNotation>{" "}
-                Searching for an opportunity to combine my background in{" "}
-                <RoughNotation type="highlight" order={3} color="#fff2c8">
-                  business management
+                and{" "}
+                <RoughNotation type="highlight" order={3} color="#c5f2cd">
+                  C#.
                 </RoughNotation>{" "}
-                with my experience in{" "}
+                I'm currently searching for an opportunity to combine my
+                background in{" "}
+                <RoughNotation type="highlight" order={4} color="#fff2c8">
+                  business
+                </RoughNotation>{" "}
+                management with my experience in{" "}
                 <RoughNotation type="highlight" color="#eadbf6" order={4}>
-                  software development.
-                </RoughNotation>
+                  software
+                </RoughNotation>{" "}
+                development.
               </p>
               <p className="py-4 text-lg leading-relaxed">
                 Prior to Epicodus I was an active member of the the craft beer
-                industry as the general manager of a high-volume craft beer bar
-                in Portland, Oregon. I am a{" "}
+                industry as the general manager of a high-volume craft beer bar.
+                I am a{" "}
                 <RoughNotation type="highlight" color="#c5f2cd" order={5}>
                   communicative,
                 </RoughNotation>{" "}
                 <RoughNotation type="highlight" color="#d1f6f4" order={6}>
-                  detail oriented,
+                  detail-oriented,
                 </RoughNotation>{" "}
                 <RoughNotation type="highlight" color="#fff2c8" order={6}>
-                  team player
+                  team-player
                 </RoughNotation>{" "}
                 who presents technical information effectively with a passion
                 for education and personal growth.
@@ -89,38 +96,18 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-2 gap-20">
-          <div>
-            <Image
-              src={Project}
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400"
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Project Name #1</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas!
-              </p>
-              <p className="text-slate-600 font-bold">View Project</p>
-            </div>
-          </div>
-          <div>
-            <Image
-              src={Project}
-              alt="Sample Project Mockup"
-              className="rounded-3xl shadow-md shadow-gray-400"
-            />
-            <div className="py-10">
-              <h5 className="text-2xl font-bold">Project Name #2</h5>
-              <p className="text-slate-600 py-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim
-                illo laboriosam cum iste dicta quia culpa sed exercitationem
-                quas!
-              </p>
-              <p className="text-slate-600 font-bold">View Project</p>
-            </div>
-          </div>
+          <ProjectPreview
+            image="/example.png"
+            alt="tip out project thumbnail"
+            title="Tip Out Mobile Application"
+            summary="Mobile application designed to help service industry workers track their tips. This application was built with React Native and Supabase"
+          />
+          <ProjectPreview
+            image="/example.png"
+            alt="tip out project thumbnail"
+            title="Tip Out Mobile Application"
+            summary="Mobile application designed to help service industry workers track their tips. This application was built with React Native and Supabase"
+          />
         </div>
       </section>
       <section className="pb-28">
