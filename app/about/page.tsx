@@ -108,7 +108,7 @@ export default function About() {
             link="/posts/class-and-functional-components"
           />
           <BlogPostPreview
-            image="/scope-img1.webp"
+            image="/scope.jpg"
             alt="Sample Project Mockup"
             title="JavaScript Scope & Closure"
             summary="Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions..."

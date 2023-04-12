@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { usePathname } from "next/navigation";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
 
 export default function Navbar() {
   const currentPath = usePathname();
@@ -27,13 +27,13 @@ export default function Navbar() {
           <Link href="/about">
             <li className="px-6">About</li>
           </Link>
-          <Link href="/projects">
+          {/* <Link href="/projects">
             <li className="px-6">Projects</li>
-          </Link>
+          </Link> */}
           {currentPath === "/" && (
             <>
               <Link href="/blog">
-                <li className="px-6">Blog</li>
+                <li className="px-10">Blog</li>
               </Link>
               <RoughNotation type="box" show={true} color="black">
                 <Link href="/contact">
