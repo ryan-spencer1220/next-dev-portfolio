@@ -36,9 +36,9 @@ export default function Navbar() {
                 <li className="px-10">Blog</li>
               </Link>
               <RoughNotation type="box" show={true} color="black">
-                <Link href="/contact">
+                <a href="mailto: ryan.spencer1220@gmail.com">
                   <li className="px-6">Contact</li>
-                </Link>
+                </a>
               </RoughNotation>
             </>
           )}

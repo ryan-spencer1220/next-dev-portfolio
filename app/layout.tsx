@@ -27,8 +27,8 @@ export default function RootLayout({
         </header>
         <main className="relative container mx-auto px-40 py-14">
           {children}
+          <Footer />
         </main>
-        <Footer />
       </body>
     </html>
   );

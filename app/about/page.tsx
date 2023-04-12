@@ -7,7 +7,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 export default function About() {
   return (
     <>
-      <section className="flex pt-40 pb-28">
+      <section className="flex px-28">
         <div className="pr-40">
           <RoughNotationGroup show={true}>
             <h1 className="text-5xl py-4">

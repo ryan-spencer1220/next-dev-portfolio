@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import SolidButton from "./SolidButton";
+import OutlinedButton from "./OutlinedButton";
 
 export default function ProjectPreview(props: {
   image: string;
   alt: string;
   title: string;
   summary: string;
+  liveSite: string;
+  sourceCode: string;
 }) {
   return (
     <div>
@@ -14,13 +17,16 @@ export default function ProjectPreview(props: {
         src={props.image}
         alt={props.alt}
         className="rounded-3xl shadow-md shadow-gray-400"
-        width={500}
-        height={500}
+        width={400}
+        height={400}
       />
       <div className="py-10">
         <h5 className="text-2xl font-bold">{props.title}</h5>
         <p className="text-slate-600 py-6">{props.summary}</p>
-        <SolidButton buttonText="Learn More" link={`/${props.title}`} />
+        <div className="grid grid-cols-2 gap-8">
+          <OutlinedButton buttonText="View Live Site" link="" />
+          <SolidButton buttonText="View Source Code" link={`/${props.title}`} />
+        </div>
       </div>
     </div>
   );

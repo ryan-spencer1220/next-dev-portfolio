@@ -100,16 +100,20 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 gap-20">
           <ProjectPreview
-            image="/example.png"
+            image="/tipout.png"
             alt="tip out project thumbnail"
             title="Tip Out Mobile Application"
-            summary="Mobile application designed to help service industry workers track their tips. This application was built with React Native and Supabase"
+            summary="Mobile application designed to help service industry workers track their income from wages & tips. This application was built with React Native & Supabase. Landing page built with Vanilla JS, CSS, & HTML."
+            liveSite=""
+            sourceCode=""
           />
           <ProjectPreview
-            image="/example.png"
+            image="/booksmart.png"
             alt="book smart project thumbnail"
             title="Booksmart Web Application"
-            summary="Web application designed to give users the opportunity to speak with their favorite authros through the ChatGPT API. This porject was created with Next.js, React, and Tailwind CSS."
+            summary="Web application designed to give users the opportunity to speak with their favorite authors through the ChatGPT API. This project was created with Next.js, React, and Tailwind CSS."
+            liveSite=""
+            sourceCode=""
           />
         </div>
       </section>
@@ -155,9 +159,9 @@ export default function Home() {
           free to reach me at{" "}
           <a
             className="text-md font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-slate-500"
-            href="mailto: hello@ryanspencer.dev"
+            href="mailto: ryan.spencer1220@gmail.com"
           >
-            hello@ryanspencer.dev
+            ryan.spencer1220@gmail.com
           </a>
           . You can also find me on{" "}
           <Link
