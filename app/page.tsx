@@ -11,10 +11,10 @@ import ProjectPreview from "./components/ProjectPreview";
 export default function Home() {
   return (
     <>
-      <section className="flex md:pt-28 md:pb-20 lg:flex-row flex-col-reverse">
+      <section className="flex md:pt-28 pb-20 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
-            <h1 className="text-5xl py-4">
+            <h1 className="md:text-5xl text-4xl py-4">
               Hello! I&apos;m{" "}
               <RoughNotation
                 type="highlight"
@@ -91,14 +91,14 @@ export default function Home() {
           className="md:w-1/3 md:h-1/3 rounded-3xl shadow-2xl shadow-gray-400"
         />
       </section>
-      <section className="pb-28">
+      <section className="md:pb-28 pb-20">
         <div>
           <h2 className="text-4xl">Projects</h2>
-          <p className="text-xl text-slate-700 pt-4 pb-20">
+          <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
             Some of the side projects I&apos;ve been working on:
           </p>
         </div>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10">
           <ProjectPreview
             image="/tipout.png"
             alt="tip out project thumbnail"
@@ -117,10 +117,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="pb-28">
+      <section className="md:pb-28 pb-20">
         <div>
           <h2 className="text-4xl">Posts</h2>
-          <p className="text-xl text-slate-700 pt-4 pb-20">
+          <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
             Thoughts on what I&apos;m building and learning.
           </p>
         </div>
@@ -148,7 +148,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="pb-20">
+      <section className="md:pb-28">
         <h2 className="text-4xl">
           <RoughNotation type="box" show={true} color="black">
             Get In Touch
