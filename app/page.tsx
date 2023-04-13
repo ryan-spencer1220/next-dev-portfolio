@@ -11,8 +11,8 @@ import ProjectPreview from "./components/ProjectPreview";
 export default function Home() {
   return (
     <>
-      <section className="flex pt-40 pb-28 break-normal">
-        <div className="pr-40">
+      <section className="flex md:pt-28 md:pb-20 lg:flex-row flex-col-reverse">
+        <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
             <h1 className="text-5xl py-4">
               Hello! I&apos;m{" "}
@@ -24,7 +24,7 @@ export default function Home() {
               >
                 Ryan,
               </RoughNotation>{" "}
-              a developer based in Portland, Oregon.
+              a developer based in Portland, OR.
             </h1>
             <div className="text-slate-600">
               <p className="py-4 text-lg leading-relaxed">
@@ -88,7 +88,7 @@ export default function Home() {
         <Image
           src={Headshot}
           alt="Ryan Photo"
-          className="w-1/3 h-1/3 rounded-3xl shadow-lg shadow-gray-400"
+          className="md:w-1/3 md:h-1/3 rounded-3xl shadow-2xl shadow-gray-400"
         />
       </section>
       <section className="pb-28">
@@ -98,14 +98,14 @@ export default function Home() {
             Some of the side projects I&apos;ve been working on:
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-20">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-20">
           <ProjectPreview
             image="/tipout.png"
             alt="tip out project thumbnail"
             title="Tip Out Mobile Application"
             summary="Mobile application designed to help service industry workers track their income from wages & tips. This application was built with React Native & Supabase. Landing page built with Vanilla JS, CSS, & HTML."
             liveSite=""
-            sourceCode=""
+            sourceCode="https://github.com/ryan-spencer1220/tip-out"
           />
           <ProjectPreview
             image="/booksmart.png"
@@ -113,7 +113,7 @@ export default function Home() {
             title="Booksmart Web Application"
             summary="Web application designed to give users the opportunity to speak with their favorite authors through the ChatGPT API. This project was created with Next.js, React, and Tailwind CSS."
             liveSite=""
-            sourceCode=""
+            sourceCode="https://github.com/ryan-spencer1220/booksmart"
           />
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function Home() {
             Thoughts on what I&apos;m building and learning.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
           <BlogPostPreview
             image="/components-1.webp"
             alt="Laptop"

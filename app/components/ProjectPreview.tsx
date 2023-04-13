@@ -23,9 +23,9 @@ export default function ProjectPreview(props: {
       <div className="py-10">
         <h5 className="text-2xl font-bold">{props.title}</h5>
         <p className="text-slate-600 py-6">{props.summary}</p>
-        <div className="grid grid-cols-2 gap-8">
-          <OutlinedButton buttonText="View Live Site" link="" />
-          <SolidButton buttonText="View Source Code" link={`/${props.title}`} />
+        <div className="flex space-x-8">
+          <OutlinedButton buttonText="View Live Site" link={props.liveSite} />
+          <SolidButton buttonText="View Source Code" link={props.sourceCode} />
         </div>
       </div>
     </div>

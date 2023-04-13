@@ -10,7 +10,14 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className="flex flex-row text-2xl justify-between content-center bg-white py-8 w-full">
+      <ul className="sm:flex md:hidden text-2xl text-center py-8 px-20">
+        <RoughNotation type="box" show={true} color="black">
+          <Link href="/">
+            <li>RYAN SPENCER</li>
+          </Link>
+        </RoughNotation>
+      </ul>
+      <ul className="md:flex hidden flex-row text-2xl justify-between content-center bg-white py-8 w-full">
         {currentPath === "/" && (
           <Link href="/">
             <li>RYAN SPENCER</li>
@@ -25,7 +32,9 @@ export default function Navbar() {
         )}
         <div className="flex flex-row justify-evenl content-center">
           <Link href="/about">
-            <li className="px-6">About</li>
+            <li className="px-6 hover:border-solid hover:border-b-4 hover:border-blue-700 hover:pb-2">
+              About
+            </li>
           </Link>
           {/* <Link href="/projects">
             <li className="px-6">Projects</li>
@@ -33,7 +42,9 @@ export default function Navbar() {
           {currentPath === "/" && (
             <>
               <Link href="/blog">
-                <li className="px-10">Blog</li>
+                <li className="px-10 hover:border-solid hover:border-b-4 hover:border-blue-700 hover:pb-2">
+                  Blog
+                </li>
               </Link>
               <RoughNotation type="box" show={true} color="black">
                 <a href="mailto: ryan.spencer1220@gmail.com">

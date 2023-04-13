@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={ptsans.className}>
-        <header className="sticky top-0 z-50 container mx-auto">
+        <header className="md:sticky md:top-0 md:z-50 md:container md:mx-auto">
           <Navbar />
         </header>
-        <main className="relative container mx-auto px-40 py-14">
+        <main className="relative md:container md:mx-auto 2xl:px-40 xl:px-24 lg:px-16 px-4 py-14">
           {children}
           <Footer />
         </main>
