@@ -14,7 +14,7 @@ export default function Home() {
       <section className="flex md:pt-28 pb-20 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
-            <h1 className="md:text-5xl text-4xl py-4">
+            <h1 className="md:text-5xl text-4xl">
               Hello! I&apos;m{" "}
               <RoughNotation
                 type="highlight"
@@ -88,7 +88,7 @@ export default function Home() {
         <Image
           src={Headshot}
           alt="Ryan Photo"
-          className="md:w-1/3 md:h-1/3 rounded-3xl shadow-2xl shadow-gray-400"
+          className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-3xl shadow-2xl shadow-gray-400 place-self-center"
         />
       </section>
       <section className="md:pb-28 pb-20">
@@ -148,9 +148,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="md:pb-28">
+      <section>
         <h2 className="text-4xl">
-          <RoughNotation type="box" show={true} color="black">
+          <RoughNotation type="underline" show={true} color="black">
             Get In Touch
           </RoughNotation>
         </h2>

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { RoughNotation } from "react-rough-notation";
 
 export default function BlogPostPreview(props: {
   image: string;
@@ -23,9 +24,11 @@ export default function BlogPostPreview(props: {
       <div className="py-10">
         <h5 className="text-2xl font-bold">{props.title}</h5>
         <p className="text-slate-600 py-6">{props.summary}</p>
-        <Link href={props.link} className="text-slate-600 font-bold">
-          Read More
-        </Link>
+        <RoughNotation type="box" show={true} color="black">
+          <Link href={props.link} className="text-slate-600 font-bold">
+            Read More
+          </Link>
+        </RoughNotation>
       </div>
     </div>
   );
