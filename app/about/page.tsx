@@ -7,10 +7,10 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 export default function About() {
   return (
     <>
-      <section className="flex pt-28 pb-28">
-        <div className="pr-40">
+      <section className="flex md:pt-28 md:pb-28 pb-12 lg:flex-row flex-col-reverse">
+        <div className="md:pr-40 px-4 md:text-left text-center">
           <RoughNotationGroup show={true}>
-            <h1 className="text-5xl py-4">
+            <h1 className="text-5xl py-4 md:pt-0 pt-12">
               Hi there, I&apos;m{" "}
               <RoughNotation type="underline" order={1}>
                 Ryan.
@@ -19,27 +19,24 @@ export default function About() {
 
             <div className="text-slate-600">
               <p className="py-4 text-lg leading-relaxed">
-                Prior to software I was an active member of the{" "}
-                <RoughNotation type="highlight" order={2} color="#c5f2cd">
-                  craft beer industry
-                </RoughNotation>
-                . While my career goals have shifted, that experience helped me
-                identify the importance I place on{" "}
-                <RoughNotation type="highlight" order={3} color="#f9caca">
+                Prior to software I was an active member of the craft beer
+                industry . While my career goals have shifted, that experience
+                helped me identify the importance I place on{" "}
+                <RoughNotation type="highlight" order={2} color="#f9caca">
                   community
                 </RoughNotation>{" "}
                 and continual{" "}
-                <RoughNotation type="highlight" order={4} color="#d1f6f4">
+                <RoughNotation type="highlight" order={3} color="#d1f6f4">
                   education.
                 </RoughNotation>{" "}
                 Ultimately it was these realizations that led me to a career in
                 software development. Working in craft beer, and specifically
                 managing a bar, proved to be a great opportunity to develop my{" "}
-                <RoughNotation type="highlight" order={5} color="#fff2c8">
+                <RoughNotation type="highlight" order={4} color="#fff2c8">
                   communication
                 </RoughNotation>{" "}
                 skills, ability to stay{" "}
-                <RoughNotation type="highlight" order={6} color="#eadbf6">
+                <RoughNotation type="highlight" order={5} color="#eadbf6">
                   organized
                 </RoughNotation>{" "}
                 , and further hone my{" "}
@@ -57,16 +54,24 @@ export default function About() {
                 spent pair programming for eight-hour days over a six month
                 period. During The first third of our program, we built a solid
                 understanding of{" "}
+                <RoughNotation type="highlight" order={8} color="#c5f2cd">
+                  Javascript
+                </RoughNotation>
+                ,
                 <RoughNotation type="highlight" order={8} color="#fff2c8">
-                  Javascript, HTML and CSS
+                  HTML
+                </RoughNotation>
+                , and{" "}
+                <RoughNotation type="highlight" order={8} color="#d1f6f4">
+                  CSS
                 </RoughNotation>
                 . Next, we utilized strongly-typed languages by spending six
                 weeks with{" "}
                 <RoughNotation type="highlight" order={9} color="#eadbf6">
-                  C# & ASP.NET Core
-                </RoughNotation>
-                . Finally, we built upon the fundamentals we learned in
-                JavaScript by taking a deep dive into{" "}
+                  C#
+                </RoughNotation>{" "}
+                & ASP.NET Core. Finally, we built upon the fundamentals we
+                learned in JavaScript by taking a deep dive into{" "}
                 <RoughNotation type="highlight" order={10} color="#d1f6f4">
                   React
                 </RoughNotation>{" "}
@@ -89,7 +94,7 @@ export default function About() {
         <Image
           src={Headshot}
           alt="Ryan Photo"
-          className="w-1/3 h-1/3 rounded-full shadow-lg shadow-gray-400"
+          className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-full shadow-2xl shadow-gray-400 place-self-center"
         />
       </section>
       <section>
@@ -99,7 +104,7 @@ export default function About() {
             Thoughts on what I&apos;m building and learning.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
           <BlogPostPreview
             image="/components-1.webp"
             alt="Laptop"
