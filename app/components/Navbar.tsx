@@ -34,14 +34,14 @@ export default function Navbar() {
           <Link href="/about">
             <li className="px-6">About</li>
           </Link>
+          <Link href="/blog">
+            <li className="px-10">Blog</li>
+          </Link>
           {/* <Link href="/projects">
             <li className="px-6">Projects</li>
           </Link> */}
           {currentPath === "/" && (
             <>
-              <Link href="/blog">
-                <li className="px-10">Blog</li>
-              </Link>
               <RoughNotation type="box" show={true} color="black">
                 <a href="mailto: ryan.spencer1220@gmail.com">
                   <li className="px-6">Contact</li>
