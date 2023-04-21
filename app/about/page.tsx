@@ -7,7 +7,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 export default function About() {
   return (
     <>
-      <section className="flex md:pt-28 md:pb-28 pb-12 lg:flex-row flex-col-reverse">
+      <section className="flex lg:pb-40 md:pt-28 md:pb-28 pb-12 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 px-4 md:text-left text-center">
           <RoughNotationGroup show={true}>
             <h1 className="text-5xl py-4 md:pt-0 pt-12">
@@ -97,7 +97,7 @@ export default function About() {
           className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-full shadow-2xl shadow-gray-400 place-self-center"
         />
       </section>
-      <section>
+      <section className="lg:pb-20">
         <div>
           <h2 className="text-4xl">Posts</h2>
           <p className="text-xl text-slate-700 pt-4 pb-20">

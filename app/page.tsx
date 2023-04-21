@@ -11,7 +11,7 @@ import ProjectPreview from "./components/ProjectPreview";
 export default function Home() {
   return (
     <>
-      <section className="flex md:pt-28 pb-20 lg:flex-row flex-col-reverse">
+      <section className="flex lg:pb-40 md:pt-28 pb-20 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
             <h1 className="md:text-5xl text-4xl">
@@ -91,7 +91,7 @@ export default function Home() {
           className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-3xl shadow-2xl shadow-gray-400 place-self-center"
         />
       </section>
-      <section className="md:pb-28 pb-20">
+      <section className="lg:pb-40 md:pb-28 pb-20">
         <div>
           <h2 className="text-4xl">Projects</h2>
           <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
@@ -104,7 +104,7 @@ export default function Home() {
             alt="tip out project thumbnail"
             title="Tip Out Mobile Application"
             summary="Mobile application designed to help service industry workers track their income from wages & tips. This application was built with React Native & Supabase. Landing page built with Vanilla JS, CSS, & HTML."
-            liveSite=""
+            liveSite="https://tipout-landing-page.vercel.app/"
             sourceCode="https://github.com/ryan-spencer1220/tip-out"
           />
           <ProjectPreview
@@ -112,12 +112,12 @@ export default function Home() {
             alt="book smart project thumbnail"
             title="Booksmart Web Application"
             summary="Web application designed to give users the opportunity to speak with their favorite authors through the ChatGPT API. This project was created with Next.js, React, and Tailwind CSS."
-            liveSite=""
+            liveSite="https://booksmart-tau.vercel.app/"
             sourceCode="https://github.com/ryan-spencer1220/booksmart"
           />
         </div>
       </section>
-      <section className="md:pb-28 pb-20">
+      <section className="lg:pb-40 md:pb-28 pb-20">
         <div>
           <h2 className="text-4xl">Posts</h2>
           <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
