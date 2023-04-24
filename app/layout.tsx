@@ -25,7 +25,7 @@ export default function RootLayout({
         <header className="md:sticky md:top-0 md:z-50 md:container md:mx-auto">
           <Navbar />
         </header>
-        <main className="relative md:container md:mx-auto 2xl:px-40 xl:px-24 lg:px-16 px-4 py-14">
+        <main className="relative md:container md:mx-auto 2xl:px-40 xl:px-24 lg:px-16 py-14">
           {children}
           <Footer />
         </main>

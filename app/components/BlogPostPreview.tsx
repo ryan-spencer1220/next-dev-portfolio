@@ -16,7 +16,7 @@ export default function BlogPostPreview(props: {
         <Image
           src={props.image}
           alt={props.alt}
-          className="rounded-3xl shadow-md shadow-gray-400"
+          className="rounded-3xl shadow-md shadow-gray-400 hover:-translate-y-2 duration-300 ease-in-out"
           width={500}
           height={500}
         />

@@ -88,7 +88,7 @@ export default function Home() {
         <Image
           src={Headshot}
           alt="Ryan Photo"
-          className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-3xl shadow-2xl shadow-gray-400 place-self-center"
+          className="md:w-1/3 md:h-1/3 w-4/6 h-4/6 rounded-3xl shadow-2xl shadow-gray-400 place-self-center hover:-translate-y-4 duration-300 ease-in-out"
         />
       </section>
       <section className="lg:pb-40 md:pb-28 pb-20">
