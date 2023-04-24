@@ -8,12 +8,14 @@ categories: "JavaScript"
 
 ![Telescope](/scope.jpg)
 
-###Scope
+### Scope
+
 Scope in Javascript typically refers to function scope, functions determine the what items can and cannot access other functions in our application. Scope also refers to the rules that determine where and when our program, variables, and functions are accessible.
 
 ![Codeblock](/blog-thumbnails/scope-img2.webp)
 
-###Closure
+### Closure
+
 The following are three commonly accepted definitions of closure in Javascript according to The All Things JavaScript YouTube channel”
 
 1. “A closure is the local variables for a function, kept alive after the function has returned”
