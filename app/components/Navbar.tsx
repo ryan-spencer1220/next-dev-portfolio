@@ -10,14 +10,14 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className="sm:flex md:hidden text-2xl text-center py-8 px-20">
+      <ul className="sm:flex md:hidden text-xl text-center py-8 px-20">
         <RoughNotation type="box" show={true} color="black">
           <Link href="/">
             <li>RYAN SPENCER</li>
           </Link>
         </RoughNotation>
       </ul>
-      <ul className="md:flex hidden flex-row text-2xl justify-between content-center bg-white py-8 w-full">
+      <ul className="md:flex hidden flex-row text-xl justify-between content-center bg-white py-8 w-full">
         {currentPath === "/" && (
           <Link href="/">
             <li>RYAN SPENCER</li>
