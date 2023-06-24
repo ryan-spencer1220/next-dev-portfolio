@@ -36,7 +36,7 @@ export default function Home() {
                 <RoughNotation type="highlight" order={3} color="#c5f2cd">
                   C#.
                 </RoughNotation>{" "}
-                I'm currently searching for an opportunity to combine my
+                I&apos;m currently searching for an opportunity to combine my
                 background in{" "}
                 <RoughNotation type="highlight" order={4} color="#fff2c8">
                   business

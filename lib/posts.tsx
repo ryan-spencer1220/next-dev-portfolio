@@ -59,8 +59,6 @@ export async function getPostData(id: string) {
     contentHtml,
   };
 
-  console.log(blogPostWithHTML);
-
   // Combine the data with the id
   return blogPostWithHTML;
 }
