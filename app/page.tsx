@@ -14,7 +14,7 @@ export default function Home() {
       <section className="flex lg:pb-40 md:pt-28 pb-20 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
-            <h1 className="md:text-5xl text-4xl">
+            <h1 className="md:text-3xl text-3xl">
               Hello! I&apos;m{" "}
               <RoughNotation
                 type="highlight"
@@ -93,8 +93,8 @@ export default function Home() {
       </section>
       <section className="lg:pb-40 md:pb-28 pb-20">
         <div>
-          <h2 className="text-4xl">Projects</h2>
-          <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
+          <h2 className="text-3xl">Projects</h2>
+          <p className="text-lg text-slate-700 pt-4 md:pb-20 pb-10">
             Some of the side projects I&apos;ve been working on:
           </p>
         </div>
@@ -119,8 +119,8 @@ export default function Home() {
       </section>
       <section className="lg:pb-40 md:pb-28 pb-20">
         <div>
-          <h2 className="text-4xl">Posts</h2>
-          <p className="text-xl text-slate-700 pt-4 md:pb-20 pb-10">
+          <h2 className="text-3xl">Posts</h2>
+          <p className="text-lg text-slate-700 pt-4 md:pb-20 pb-10">
             Thoughts on what I&apos;m building and learning.
           </p>
         </div>
@@ -149,12 +149,12 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <h2 className="text-4xl">
+        <h2 className="text-3xl">
           <RoughNotation type="underline" show={true} color="black">
             Get In Touch
           </RoughNotation>
         </h2>
-        <p className="text-xl text-slate-700 pt-4 pb-20">
+        <p className="text-lg text-slate-700 pt-4 pb-20">
           Do you have a job opportunity or idea you would like to discuss? Feel
           free to reach me at{" "}
           <a
