@@ -10,11 +10,11 @@ import ProjectPreview from "./components/ProjectPreview";
 
 export default function Home() {
   return (
-    <>
+    <div className="md:text-left text-center md:px-0 px-10">
       <section className="flex lg:pb-40 md:pt-28 pb-20 lg:flex-row flex-col-reverse">
         <div className="md:pr-40 md:pt-0 pt-10">
           <RoughNotationGroup show={true}>
-            <h1 className="md:text-3xl text-3xl">
+            <h1 className="md:text-6xl text-3xl">
               Hello! I&apos;m{" "}
               <RoughNotation
                 type="highlight"
@@ -180,6 +180,6 @@ export default function Home() {
           .
         </p>
       </section>
-    </>
+    </div>
   );
 }

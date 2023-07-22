@@ -12,7 +12,7 @@ export default function ProjectPreview(props: {
   sourceCode: string;
 }) {
   return (
-    <div>
+    <div className="grid">
       <Image
         src={props.image}
         alt={props.alt}
